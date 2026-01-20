@@ -27,12 +27,10 @@ header a {
 .part_one {
     position: relative;
     width: 100%;
-    height: calc(100vh - 110px); 
-    font-size: 25px;
+    height: 90vh; 
 }
 
 .part_one .imgs {
-    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -47,38 +45,41 @@ header a {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0,0,0,0.55);
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.55);
 }
 
 .part_one .toolbar {
     position: absolute;
-    inset: 0;
-    z-index: 2;
-
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    color: white;
     text-align: center;
-    padding: 20px;
+    color: white;
 }
 
 .part_one .toolbar h1 {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    margin-bottom: 12px;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .part_one .toolbar p {
-    font-size: 1.1rem;
+    font-size: 18px;
+    line-height: 1.6;
     opacity: 0.9;
-    max-width: 700px;
 }
 
+.part_one button{
+    margin-top: 30px;
+}
+
+
 .part_one .toolbar button {
-    margin-top: 24px;
     padding: 14px 32px;
     background-color: #D4AF37;
     border: none;
@@ -93,6 +94,7 @@ header a {
     background-color: #c4a437;
     transform: scale(1.05);
 }
+
 
 .part_two {
     background-color: white;
