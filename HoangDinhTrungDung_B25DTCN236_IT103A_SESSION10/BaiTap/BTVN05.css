@@ -5,7 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* NỀN CHUNG */
 .overall {
     background-color: #f6f2eb;
     padding: 40px;
@@ -16,15 +15,13 @@
     margin-bottom: 30px;
 }
 
-/* ===== FLEX CONTAINER ===== */
 .container {
     display: flex;
-    flex-wrap: wrap;       /* cho phép xuống dòng */
+    flex-wrap: wrap;       
     gap: 24px;
     justify-content: center;
 }
 
-/* ===== CARD CHUNG ===== */
 .part {
     background: white;
     border-radius: 16px;
@@ -42,7 +39,7 @@
 .part img {
     width: 100%;
     height: 240px;
-    object-fit: cover; /* không méo ảnh */
+    object-fit: cover; 
 }
 
 .part h3 {
@@ -56,11 +53,10 @@
     margin: 8px 0 16px;
 }
 
-/* ===== BIG & SMALL (KHÔNG MEDIA QUERY) ===== */
 .part-one {
-    flex: 1 1 600px;   /* món lớn – tối thiểu 600px */
+    flex: 1 1 600px;   
 }
 
 .part-two {
-    flex: 1 1 260px;   /* món nhỏ – tối thiểu 260px */
+    flex: 1 1 260px;   
 }
